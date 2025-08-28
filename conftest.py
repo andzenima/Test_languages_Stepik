@@ -47,9 +47,3 @@ def driver(request):
 
     print("\n<<<<<< quit driver >>>>>>")
     driver.quit()
-
-
-
-# pytest --language = en --driver_name == chrome
-#                     de                  firefox
-#                     ru                  chrome
