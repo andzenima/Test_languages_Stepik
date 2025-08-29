@@ -23,10 +23,9 @@ def test_language(driver):
 
     time.sleep(4)
 
-# -------------------------------------
-
+# run with command line
 # pytest --language=ru --driver_name=chrome test_items.py
-#                                    firefox
+#                                   =firefox
 
     # "ar" > العربيّة            # "ca" > català
     # "cs" > česky              # "da" > dansk
