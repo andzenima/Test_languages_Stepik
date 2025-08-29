@@ -9,9 +9,10 @@ import time
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-# try with link below to test negative scenario and check assert
+# # try with link below to test negative scenario and check assert
 # link = "http://selenium1py.pythonanywhere.com/catalogue/"
 
+# variant 1
 def test_language(driver):
     driver.get(link)
 
@@ -25,6 +26,14 @@ def test_language(driver):
         assert False, "NoSuchElementException: 'Add to cart' button isn't found on the page"
 
     time.sleep(4)
+
+# # variant 2
+# def test_language(driver):
+#     driver.get(link)
+#     button = driver.find_elements(By.CSS_SELECTOR, '.btn-add-to-basket')
+#     assert len(button) == 1, "'Add to cart' button isn't found on the page"
+#     time.sleep(4)
+
 
 # run with command line
 # pytest --language=ru --driver_name=chrome test_items.py
