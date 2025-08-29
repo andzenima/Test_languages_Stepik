@@ -9,6 +9,9 @@ import time
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
+# try with link below to test negative scenario and check assert
+# link = "http://selenium1py.pythonanywhere.com/catalogue/"
+
 def test_language(driver):
     driver.get(link)
 
